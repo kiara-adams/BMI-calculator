@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head> 
+<body>
+        <section>
+            <div class="container" id="container">
+                <div class="row">
+                    <h1>BMI Calculator</h1>
+                </div>
+                <div class="row">
+                    <label for="">
+                        Age:
+                        <br>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="">
+                        Gender:
+                    </label>
+                    <br>
+                    <label for="male">
+                        Male:
+                        <input type="radio">
+                    </label>
+                    <label for="female">
+                        Female :
+                        <input type="radio">
+                    </label>
+                </div>
+                <div class="row">
+                    <label>
+                    Height (cm):
+                    <br>
+                        <input type="text" id="height">
+                    </label>
+                </div>
+                <div class="row">
+                    <label>
+                        Weight in kg's:
+                        <br>
+                        <input type="text" id="weight">
+                    </label>
+                </div>
+                <br>
+                <div class="row">
+                    <button onclick="calculateBMI()" id="calcBMI">Calculate BMI</button>
+                </div>
+                <div class="row">
+                    <p id="bmi-result"></p>
+                </div> 
+                
+                
+            </div>
+         
+        </section>
+        
+    <script src="./script/BMI.js"></script>
+</body>
+</html>
